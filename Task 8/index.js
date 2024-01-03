@@ -1,21 +1,10 @@
-function add(x, y) {
-    result = x + y;
-    return result;
+function highestScores(scores) {
+    for(i = 0; i < scores.length; i++){
+        max = scores[0];
+        if (max < scores[i]) {
+            max = scores[i];
+        }
+    }
+    return max;
 }
-function sub(x, y) {
-    result = x - y;
-    return result;
-}
-function div(x, y) {
-    result = x / y;
-    return result;
-}
-function mul(x, y) {
-    result = x + y;
-    return result;
-}
-
-document.write(add(5,6) + '<br/>');
-document.write(sub(5,6) + '<br/>');
-document.write(div(5,6) + '<br/>');
-document.write(mul(5,6) + '<br/>');
+console.log(highestScores([65, 56, 24, 84, 96]));
